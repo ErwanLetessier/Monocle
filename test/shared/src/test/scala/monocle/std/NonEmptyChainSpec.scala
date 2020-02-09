@@ -15,6 +15,7 @@ class NonEmptyChainSpec extends MonocleSuite {
   checkAll("each NonEmptyChain", EachTests[NonEmptyChain[Int], Int])
   checkAll("index NonEmptyChain", IndexTests[NonEmptyChain[Int], Int, Int])
   checkAll("filterIndex NonEmptyChain", FilterIndexTests[NonEmptyChain[Int], Int, Int])
+  checkAll("filterValue NonEmptyChain", FilterValueTests[NonEmptyChain[Int], Int])
   checkAll("reverse NonEmptyChain", ReverseTests[NonEmptyChain[Int]])
   checkAll("cons1 NonEmptyChain", Cons1Tests[NonEmptyChain[Int], Int, Chain[Int]])
   checkAll("snoc1 NonEmptyChain", Snoc1Tests[NonEmptyChain[Int], Chain[Int], Int])

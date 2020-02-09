@@ -13,6 +13,7 @@ class VectorSpec extends MonocleSuite {
   checkAll("each Vector", EachTests[Vector[Int], Int])
   checkAll("index Vector", IndexTests[Vector[Int], Int, Int])
   checkAll("filterIndex Vector", FilterIndexTests[Vector[Int], Int, Int])
+  checkAll("filterValue Vector", FilterValueTests[Vector[Int], Int])
 
   checkAll("plated Vector", TraversalTests(plate[Vector[Int]]))
 }

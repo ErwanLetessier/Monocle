@@ -12,6 +12,7 @@ class LazyListSpec extends MonocleSuite {
   checkAll("each LazyList", EachTests[LazyList[Int], Int])
   checkAll("index LazyList", IndexTests[LazyList[Int], Int, Int])
   checkAll("filterIndex LazyList", FilterIndexTests[LazyList[Int], Int, Int])
+  checkAll("filterValue LazyList", FilterValueTests[LazyList[Int], Int])
 
   checkAll("plated LazyList", TraversalTests(plate[LazyList[Int]]))
 }

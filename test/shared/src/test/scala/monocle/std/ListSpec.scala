@@ -15,6 +15,7 @@ class ListSpec extends MonocleSuite {
   checkAll("each List", EachTests[List[Int], Int])
   checkAll("index List", IndexTests[List[Int], Int, Int])
   checkAll("filterIndex List", FilterIndexTests[List[Int], Int, Int])
+  checkAll("filterValue List", FilterValueTests[List[Int], Int])
 
   checkAll("plated List", TraversalTests(plate[List[Int]]))
 }

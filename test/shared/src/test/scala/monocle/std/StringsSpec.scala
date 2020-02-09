@@ -14,6 +14,7 @@ class StringsSpec extends MonocleSuite {
   checkAll("each String", EachTests[String, Char])
   checkAll("index String", IndexTests[String, Int, Char])
   checkAll("filterIndex String", FilterIndexTests[String, Int, Char])
+  checkAll("filterValue String", FilterValueTests[String, Char])
 
   checkAll("String to Boolean ", PrismTests(stringToBoolean))
   checkAll("String to Byte"    , PrismTests(stringToByte))

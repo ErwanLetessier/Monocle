@@ -19,6 +19,7 @@ class ChainSpec extends MonocleSuite {
   checkAll("each Chain", EachTests[Chain[Int], Int])
   checkAll("index Chain", IndexTests[Chain[Int], Int, Int])
   checkAll("filterIndex Chain", FilterIndexTests[Chain[Int], Int, Int])
+  checkAll("filterValue Chain", FilterValueTests[Chain[Int], Int])
 
   checkAll("plated Chain", TraversalTests(plate[Chain[Int]]))
 }
